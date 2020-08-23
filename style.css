@@ -16,7 +16,7 @@ body{
 #background{
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-image: url(https://images.unsplash.com/photo-1516663713099-37eb6d60c825?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
 }
 
 #circle{
