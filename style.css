@@ -1,29 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
+
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-#background{
+#background {
+    cursor: none;
     width: 100%;
     height: 100%;
     background-color: black;
+
 }
 
-#circle{
+.circle {
     position: absolute;
-    transform: translate(-50%, -50%);
-    width: 60px;
-    height: 60px;
+    cursor: none;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
+
     border: 1.2px solid #fff;
+    animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+}
+
+
+
+@keyframes scaleIn {
+    from {
+
+        transform: scale(.5, .5);
+        opacity: .5;
+    }
+
+    to {
+
+
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+    }
 }
