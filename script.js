@@ -10,7 +10,7 @@
 // for x and y axis, and then update it to the circle
 
 let circle = document.querySelector('#circle');
-
+let bg= document.querySelector('#background');
 
 window.addEventListener('mousemove', function(details){
     let xValue = details.clientX;
@@ -20,4 +20,17 @@ window.addEventListener('mousemove', function(details){
         circle.style.top = `${yValue}px`;
         circle.style.left = `${xValue}px`;
     }, 50);
+});
+
+// added code to change bg and circle color on click
+var bgcolor=["white",'black'];
+var ring=["black",'white'];
+var i=-1;
+circle.addEventListener('click',function(){
+    i++;
+    if (i>1){
+        i=0;
+    }
+    bg.style.background=""+ bgcolor[i];
+    circle.style.border="1.2px solid "+ ring[i];
 });
