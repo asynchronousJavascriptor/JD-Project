@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -10,7 +11,7 @@ html,body{
 }
 
 body{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #background{
@@ -20,6 +21,7 @@ body{
 }
 
 #circle{
+    z-index: 9999999999999999999999999999999999999999999999999999999999999999 !important;
     position: absolute;
     transform: translate(-50%, -50%);
     width: 60px;
@@ -27,3 +29,109 @@ body{
     border-radius: 50%;
     border: 1.2px solid #fff;
 }
+#welcome{
+
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50% ,-50%);
+    font-weight: 200;
+    z-index: 99999999999999999999999999999;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+#wait{
+    opacity: 0;
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(63, 161, 168);
+    opacity: 0;
+}
+
+#jd{
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    display: none;
+  background: #efefef;
+    transform: translate(-50% , -50%);
+    background: url(jd.jfif) no-repeat;
+    font-size: 500px;
+    color: white;
+  overflow: hidden;
+    background-size: cover;
+  background-position: 50% 50%;
+  -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#row{
+    z-index: 9999999999999999999999999999999999999 !important;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(0% , -50%);
+    width: 60%;
+    height: 200px;
+    position: absolute;
+    background-color: rgb(68, 93, 117);
+    z-index: 9999999;
+}
+
+
+
+#slidecircle{
+    opacity: 0;
+    width: 0%;
+    cursor: pointer;
+    
+    height: 200px;
+    position: absolute;
+    display: flex;
+    left: 0%;
+    background-color: #fff;
+    padding:60px 0px 0px 50px;
+}
+
+
+#circle1{
+    color: black;
+    display: flex;
+    font-size: 25px;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: none;
+    border:2px solid black;
+    border-radius: 50%;
+    
+}
+#circletext{
+    width: 200px;
+    margin-left: 20px;
+    height: 50px !important;
+    display: flex;
+    padding-bottom: 10px;
+    align-items: flex-end;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-bottom:2px solid rgb(31, 31, 31);
+}
+
+
+
+#svg{
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 29% !important;
+    
+}
+
