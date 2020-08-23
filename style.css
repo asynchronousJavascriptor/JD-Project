@@ -27,3 +27,37 @@ body{
     border-radius: 50%;
     border: 1.2px solid #fff;
 }
+h1{
+    color: white;
+    font-family: poppins;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+h2
+{
+    color: white;
+    font-family: poppins;
+    position: absolute;
+    font-weight: 500;
+    letter-spacing: px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+h3
+{
+    color: white;
+    font-family: poppins;
+    position: absolute;
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 14px;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
