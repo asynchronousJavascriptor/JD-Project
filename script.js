@@ -11,6 +11,12 @@
 
 let circle = document.querySelector('#circle');
 
+let widthmore = window.addEventListener('click',function(){
+ setTimeout(function(){
+     circle.style.border = "3px solid white";
+ },50)   
+
+})
 
 window.addEventListener('mousemove', function(details){
     let xValue = details.clientX;
