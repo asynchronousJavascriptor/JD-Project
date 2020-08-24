@@ -11,7 +11,6 @@
 
 let circle = document.querySelector('#circle');
 
-
 window.addEventListener('mousemove', function(details){
     let xValue = details.clientX;
     let yValue = details.clientY;
