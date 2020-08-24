@@ -21,3 +21,33 @@ window.addEventListener('mousemove', function(details){
         circle.style.left = `${xValue}px`;
     }, 50);
 });
+
+let t1 = gsap.timeline();
+t1.from('#textField', {
+    x:40,
+    duration:1,
+    opacity:0,
+    ease:'expo.easeinOut',
+})
+.from('#box',{
+    x:40,
+    duration:1,
+    opacity:0,
+    ease:'expo.easeinOut',
+}) 
+.to('#box .line',{
+    width:'90px',
+    duration:1,
+    ease:'expo.inOut',
+}) 
+let warpper = document.querySelector('#wrapper');
+let expand = document.querySelector('#expand');
+let svg = document.querySelector('#svg');
+expand.addEventListener('click',function(){
+    t1.reverse();
+    setTimeout(function(){
+    warpper.style.display = 'none';
+     svg.style.display = 'initial';   
+    },3010)
+    
+})

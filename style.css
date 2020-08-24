@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 html,body{
@@ -14,6 +15,7 @@ body{
 }
 
 #background{
+    position: relative;
     width: 100%;
     height: 100%;
     background-color: black;
@@ -46,4 +48,72 @@ body{
     font-size: 600px;
     font-weight: 900;
     font-family: "Montserrat";
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+}
+#textField {
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%,-50%);
+    position: absolute;
+    width: 200px;
+    height: 180px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 40px 20px;
+}
+#textField h4{
+    font-size: 13px;
+    line-height:17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+}
+#box {
+    top: 50%;
+    left: 70%;
+    transform: translate(-62%,-50%);
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+}
+#box .line {
+    margin-left: 20px;
+    width: 0px;
+    height: 1px;
+    background-color: black;
+}
+#expand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    margin-left: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#svg {
+    display: none;
+    position: absolute;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%,-50%);
+}
+#svg svg {
+    stroke-dashoffset: 1000px;
+    stroke-dasharray: 1000px;
+    animation: anim 3s linear 1s both;
+}
+@keyframes anim {
+    to {
+        stroke-dashoffset: 0px;
+    }
 }
