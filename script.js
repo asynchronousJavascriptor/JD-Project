@@ -11,11 +11,9 @@
 
 let circle = document.querySelector('#circle');
 
-
 window.addEventListener('mousemove', function(details){
     let xValue = details.clientX;
     let yValue = details.clientY;
-
     setTimeout(function(){
         circle.style.top = `${yValue}px`;
         circle.style.left = `${xValue}px`;
@@ -23,15 +21,21 @@ window.addEventListener('mousemove', function(details){
 });
 
 let t1 = gsap.timeline();
-t1.from('#textField', {
+t1.from('#wrapper',{
     x:40,
+    opacity:0,
     duration:1,
+    ease:'expo.inOut'
+})
+.from('#textField', {
+    x:40,
+    duration:.7,
     opacity:0,
     ease:'expo.easeinOut',
 })
 .from('#box',{
     x:40,
-    duration:1,
+    duration:.6,
     opacity:0,
     ease:'expo.easeinOut',
 }) 
@@ -46,8 +50,7 @@ let svg = document.querySelector('#svg');
 expand.addEventListener('click',function(){
     t1.reverse();
     setTimeout(function(){
-    warpper.style.display = 'none';
      svg.style.display = 'initial';   
-    },3010)
+    },2700)
     
 })
