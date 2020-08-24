@@ -38,12 +38,12 @@ body{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: 1.2px solid #fff;
+    border: 1.5px solid #fff;
 }
 
 #wrapper h1{
     color: #fff;
     font-size: 600px;
     font-weight: 900;
-    font-family: "Montserrat";
+    font-family: "Montserrat",sans-serif;
 }
