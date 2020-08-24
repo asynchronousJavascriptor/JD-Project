@@ -27,18 +27,24 @@ t1.from('#wrapper',{
     duration:1,
     ease:'expo.inOut'
 })
-.from('#textField', {
-    x:40,
-    duration:.7,
-    opacity:0,
-    ease:'expo.easeinOut',
-})
 .from('#box',{
     x:40,
     duration:.6,
     opacity:0,
     ease:'expo.easeinOut',
 }) 
+.from('#textField', {
+    x:40,
+    duration:.7,
+    opacity:0,
+    ease:'expo.easeinOut',
+})
+.from('#textField h4', {
+    y:40,
+    duration:.7,
+    opacity:0,
+    ease:'expo.easeinOut',
+})
 .to('#box .line',{
     width:'90px',
     duration:1,
