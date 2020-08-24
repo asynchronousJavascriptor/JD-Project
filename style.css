@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+#content{
+    width: 500px;
+    height: 500px;
+    background-color: #e0e0e0;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    background-image: url(https://www.netclipart.com/pp/m/261-2613247_web-design-and-development-melbourne-web-development-illustration.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 15px 20px 10x black;
+    display: flex;
+    align-items: center;
+}
+#background{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#one{
+    background-color: #30384b;
+    width: 30%;
+    height: 100%;
+}
+#one h2{
+    color: #fff;
+    text-align: center;
+    margin-top: 12px;
+}
+.social{
+    margin-left: -80px;
+    padding: 10px;
+    font-size: 20px;
+}
+.social i{
+    color: #e0e0e0;
+    cursor: pointer;
+}
+#two{
+    background-color: #fff;
+    width: 70%;
+    height: 100%;
+}
+#two h1{
+    margin-top: 150px;
+    margin-left: 450px;
+    font-size: 50px;
+    color: #30384b;
+}
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    background: none;
+    margin-top: 15px;
+    margin-left: 100px;
+    background-color: #e0e0e0;
+}
+#search i{
+    
+    margin-left: 100px;
+    color: rgb(116, 116, 116);
+}
+#search button{
+    color: rgb(116, 116, 116);
+}
+#nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+#nav ul li{
+    list-style: none;
+}
+#two p{
+    margin-top: 30px;
+    margin-left: 450px;
+    font-size: 12px;
+}
+#btn-2{
+    margin-top: 40px;
+    margin-left: 450px;
+    background-color: #fb5235;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#one h5{
+    text-align: center;
+    margin-top: 650px;
+    font-size: 15px;
+    color: #e0e0e0;
+}
+
