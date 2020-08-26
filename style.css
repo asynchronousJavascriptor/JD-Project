@@ -37,7 +37,9 @@ body{
     transform: translate(-50%, -50%);
     width: 60px;
     height: 60px;
+    z-index: 999999999;
     border-radius: 50%;
+    pointer-events: none;
     border: 1.2px solid #fff;
 }
 
@@ -45,5 +47,73 @@ body{
     color: #fff;
     font-size: 600px;
     font-weight: 900;
+    font-family: "Montserrat";
+}
+
+#whitestrip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    width: 53%;
+    height: 140px;
+    background-color: white;
+}
+
+#blackcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 330px;
+    background-color: black;
+}
+
+#blackcard p{
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-family: "PlayFair Display";
+}
+
+#linelem{
+    display: flex;
+    align-items: center;
+}
+
+#linelem .line{
+    width: 200px;
+    height: 2px;
+    margin: 0 30px;
+    background-color: black;
+}
+
+#linelem h4{
+    font-family: "PlayFair Display";
+    font-size: 13px;
+}
+
+#linelem i{
+    cursor: pointer;
+}
+
+#background>h5{
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 15px;
+    transform: rotate(-90deg);
+    font-size: 8px;
     font-family: "Montserrat";
 }
